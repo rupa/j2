@@ -39,7 +39,7 @@ j() {
         [ -f "$JPY" ] || return
         cd="$($JPY -f $datafile $*)"
         [ -z "$cd" -o "$cd" = "$PWD" ] && return
-        cd $cd
+        cd "$cd"
     fi
 }
 # tab completion
