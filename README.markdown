@@ -10,8 +10,8 @@ This is a complete rethink of [j](http://github.com/rupa/j/). See CHANGES for di
 
 * put something like this in your .bashrc:
 
-    export JPY=/path/to/j.py # tells j.sh where the python script is
-    . /path/to/j.sh          # provides the j() function
+        export JPY=/path/to/j.py # tells j.sh where the python script is
+        . /path/to/j.sh          # provides the j() function
 
 * make sure `j.py` is executable
 * `cd` around for a while to build up the db
