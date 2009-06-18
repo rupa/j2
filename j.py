@@ -1,27 +1,20 @@
 #!/usr/bin/env python
 '''
 maintains a jump-list of the directories you actually use
-old directories eventually fall off the list
-inspired by Joel Schaerer's http://wiki.github.com/joelthelion/autojump
-and something similar i had - but i could never get the dir list right.
 
 INSTALL:
-  1) put something like this in your .bashrc:
+  * put something like this in your .bashrc:
     export JPY=/path/to/j.py # tells j.sh where the python script is
     . /path/to/j.sh          # provides the j() function
-  2) make sure j.py is executable
-  3) cd around for a while to build up the db
-  4) PROFIT!!
+  * make sure j.py is executable
+  * cd around for a while to build up the db
+  * PROFIT!!
 
-TIPS:
-  if you opten prefer one of the non-default match type, use aliases:
-    alias jl='j -l'
-    alias jt='j -t recent'
-    alias jr='j -r rank'
-
-CREDITS:
-  Joel Schaerer aka joelthelion for autojump
-  Daniel Drucker aka dmd for finding bugs and making me late for lunch
+USE:
+  * j foo     # goes to most frecent dir matching foo
+  * j foo bar # goes to most frecent dir matching foo and bar
+  * j -t rank # goes to highest ranked dir matching foo
+  * j -l foo  # list all dirs matching foo
 '''
 
 import os, sys, time
