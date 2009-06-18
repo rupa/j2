@@ -26,10 +26,9 @@ This is a complete rethink of [j](http://github.com/rupa/j/). See CHANGES for di
 * `j` supports tab completion.
 
 * if you opten prefer one of the non-default match type, use aliases:
-
-    alias jl='j -l'
-    alias jt='j -t recent'
-    alias jr='j -t rank'
+    * `alias jl='j -l'`
+    * `alias jt='j -t recent'`
+    * `alias jr='j -t rank'`
 
 # MATCHING ALGORITHM
 
@@ -50,15 +49,15 @@ When the rank of a directory falls below 1, it will fall off the list.
 
 # FAQ
 
-How come `j` doesn’t work like`cd`?
+Q) How come `j` doesn’t work like`cd`?
 
-    `j` is not intended as a substitute for the cd command. You should still `cd` everywhere as you normally would. When you want to jump somewhere you have been, then type `j <args>` to jump to a directory in your often used list.
+A) `j` is not intended as a substitute for the cd command. You should still `cd` everywhere as you normally would. When you want to jump somewhere you have been, then type `j <args>` to jump to a directory in your often used list.
 
-How do i 'source' something? Why?
+Q) How do i 'source' something? Why?
 
-    Short answer: instead of running the script as `j.sh` you type `source j.sh or `. j.sh` in a shell, or to make it available all the time, put a command in your `.bashrc` that sources it, or just paste the contents of `j.sh` directly into your `.bashrc`.
+A) Short answer: instead of running the script as `j.sh` you type `source j.sh or `. j.sh` in a shell, or to make it available all the time, put a command in your `.bashrc` that sources it, or just paste the contents of `j.sh` directly into your `.bashrc`.
 
-    Long answer: sourcing is like importing. When you run a script in a shell, it creates a subshell, runs your script, and returns to your current shell. If you cd in that subshell, it won’t matter to your current shell, because when your script is done running, it exits, and comes back to where you (still) are in your current shell. What we want in this case is to have the function and commands in our script defined in our current shell. Sourcing – rather than executing – the file does exactly that.
+Long answer: sourcing is like importing. When you run a script in a shell, it creates a subshell, runs your script, and returns to your current shell. If you cd in that subshell, it won’t matter to your current shell, because when your script is done running, it exits, and comes back to where you (still) are in your current shell. What we want in this case is to have the function and commands in our script defined in our current shell. Sourcing – rather than executing – the file does exactly that.
 
 # CHANGES FROM [ORIGINAL j](http://github.com/rupa/j/)
 
