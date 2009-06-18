@@ -4,7 +4,7 @@ Spend a lot of time cd-ing around a complex directory tree?
 
 `j` keeps track of where you’ve been and how much time you spend there, and provides a convenient way to jump to the directories you actually use.
 
-This is a complete rethink of [j](http://github.com/rupa/j/). See CHANGES for differences.
+This is a complete rethink of [original j](http://github.com/rupa/j/). See CHANGES for differences.
 
 # INSTALLATION
 
