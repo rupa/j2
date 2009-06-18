@@ -9,8 +9,9 @@ This is a complete rethink of [j](http://github.com/rupa/j/). See CHANGES for di
 # INSTALLATION
 
 * put something like this in your .bashrc:
-    * `export JPY=/path/to/j.py # tells j.sh where the python script is`
-    * `. /path/to/j.sh          # provides the j() function`
+
+    export JPY=/path/to/j.py # tells j.sh where the python script is
+    . /path/to/j.sh          # provides the j() function
 
 * make sure `j.py` is executable
 * `cd` around for a while to build up the db
@@ -24,7 +25,7 @@ This is a complete rethink of [j](http://github.com/rupa/j/). See CHANGES for di
 
 * `j` supports tab completion.
 
-* if you opten prefer one of the non-default match type, use aliases:
+* if you often prefer one of the non-default match type, use aliases:
     * `alias jl='j -l'`
     * `alias jt='j -t recent'`
     * `alias jr='j -t rank'`
@@ -43,7 +44,7 @@ Frecency: alter rank by time of last access.
 
 # AGING
 
-Rank is recalculated as `.9*rank` when sum of ranks > 1000.
+Rank is recalculated as 0.9*rank when sum of ranks > 1000.
 When the rank of a directory falls below 1, it will fall off the list.
 
 # FAQ
@@ -70,5 +71,5 @@ Long answer: sourcing is like importing. When you run a script in a shell, it cr
 
 # CREDITS
 
-Joel Schaerer aka joelthelion for autojump
-Daniel Drucker aka dmd for finding bugs and making me late for lunch
+* Joel Schaerer aka joelthelion for autojump
+* Daniel Drucker aka dmd for finding bugs and making me late for lunch
