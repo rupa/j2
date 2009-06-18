@@ -72,5 +72,5 @@ Long answer: sourcing is like importing. When you run a script in a shell, it cr
 
 # CREDITS
 
-* Joel Schaerer aka joelthelion for autojump
+* Joel Schaerer aka [joelthelion](http://github.com/joelthelion/) for [autojump](http://github.com/joelthelion/autojump/)
 * Daniel Drucker aka dmd for finding bugs and making me late for lunch
