@@ -127,9 +127,7 @@ class J(object):
         return self.m
 
 def main(file, list, type, args):
-    '''
-    make sure the only thing that gets to stdout is a place to cd
-    '''
+    ''' make sure the only thing that gets to stdout is a place to cd '''
     if not file:
         return
 
