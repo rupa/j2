@@ -9,7 +9,9 @@ INSTALL:
   1) put something like this in your .bashrc:
     export JPY=/path/to/j.py # tells j.sh where the python script is
     . /path/to/j.sh          # provides the j() function
-  2) cd around for a while to build up the db
+  2) make sure j.py is executable
+  3) cd around for a while to build up the db
+  4) PROFIT!!
 
 TIPS:
   if you opten prefer one of the non-default match type, use aliases:
