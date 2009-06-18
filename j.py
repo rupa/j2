@@ -6,11 +6,13 @@ inspired by Joel Schaerer's http://wiki.github.com/joelthelion/autojump
 and something similar i had - but i could never get the dir list right.
 
 INSTALL:
-  source j.sh into .bashrc under your '[-z "$PS1" ] || return' line
-  cd around for a while
+  1) put something like this in your .bashrc:
+    export JPY=/path/to/j.py # tells j.sh where the python script is
+    . /path/to/j.sh          # provides the j() function
+  2) cd around for a while to build up the db
 
 TIPS:
-  if you opten prefer a non-default match type, use aliases:
+  if you opten prefer one of the non-default match type, use aliases:
     alias jl='j -l'
     alias jt='j -t recent'
     alias jr='j -r rank'
@@ -166,7 +168,8 @@ if __name__ == '__main__':
     parser.add_option('-f', '--file', help='data file')
     parser.add_option('-l', action='store_true', default=False,
                       help='list matches')
-    parser.add_option('-t', default='frecent', help='match type [frecent (default), rank, recent]')
+    parser.add_option('-t', default='frecent',
+                      help='match type [frecent (default), rank, recent]')
     parser.add_option('-V', action='store_true', default=False,
                       help='documentation')
     saveout = sys.stdout

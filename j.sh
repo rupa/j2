@@ -35,9 +35,9 @@ j() {
    }
   ' $datafile 2>/dev/null
  else
-  # list/go
-  local pyfile="$HOME/Documents/dev/jj/j.py"
-  cd="$($pyfile -f $datafile $*)"
+  # list/go (must set $JPY)
+  [ -f "$JPY" ] || return
+  cd="$($JPY -f $datafile $*)"
   [ -z "$cd" -o "$cd" = "$PWD" ] && return
   cd $cd
  fi
