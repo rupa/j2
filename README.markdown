@@ -17,7 +17,7 @@ This is a complete rethink of [original j](http://github.com/rupa/j/). See CHANG
 * `cd` around for a while to build up the db
 * PROFIT!!
 
-## TROUBLESHOOTING
+### TROUBLESHOOTING
 
 * tested with python 2.6
 
