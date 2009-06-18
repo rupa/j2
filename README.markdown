@@ -53,6 +53,8 @@ Frecency: alter rank by time of last access.
     * If access within last week, divide rank by 2.
     * If access is more than a week, divide rank by 10.
 
+I'm interested in improving/refining this algorithm, but it's a decent start.
+
 ### AGING
 
 Rank is recalculated as 0.9*rank when sum of ranks > 1000.
