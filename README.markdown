@@ -17,6 +17,16 @@ This is a complete rethink of [original j](http://github.com/rupa/j/). See CHANG
 * `cd` around for a while to build up the db
 * PROFIT!!
 
+## TROUBLESHOOTING
+
+* tested with python 2.6
+
+* if you are using python 2.5 you will need to add a line to `j.py` above the import statement:
+
+        from __future__ import with_statement
+
+* python < 2.5 may require further alteration
+
 ### USE
 
 * `j` by itself (or `j -l`) displays the current list of directories being remembered.
