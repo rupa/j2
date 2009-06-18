@@ -27,9 +27,9 @@ This is a complete rethink of [j](http://github.com/rupa/j/). See CHANGES for di
 
 * if you often prefer one of the non-default match type, use aliases:
 
-    alias jl='j -l'
-    alias jt='j -t recent'
-    alias jr='j -t rank'
+        alias jl='j -l'
+        alias jt='j -t recent'
+        alias jr='j -t rank'
 
 # MATCHING ALGORITHM
 
