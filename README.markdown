@@ -5,7 +5,7 @@ Changes from original j:
 
     * Uses 2 separate files, so install is a bit more complicated.
 
-    * Default ordering is 'frecency': rank weighted by time since last access.
+    * Default ordering is 'frecent': rank weighted by time since last access.
       Match by 'rank' and 'recent' still available.
 
     * If all matches have a common prefix, and the prefix is one of the matches,
