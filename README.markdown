@@ -1,4 +1,4 @@
-## OVERVIEW
+### OVERVIEW
 
 Spend a lot of time cd-ing around a complex directory tree?
 
@@ -6,7 +6,7 @@ Spend a lot of time cd-ing around a complex directory tree?
 
 This is a complete rethink of [original j](http://github.com/rupa/j/). See CHANGES for differences.
 
-## INSTALLATION
+### INSTALLATION
 
 * put something like this in your .bashrc:
 
@@ -17,7 +17,7 @@ This is a complete rethink of [original j](http://github.com/rupa/j/). See CHANG
 * `cd` around for a while to build up the db
 * PROFIT!!
 
-## USE
+### USE
 
 * `j` by itself (or `j -l`) displays the current list of directories being remembered.
 
@@ -31,7 +31,7 @@ This is a complete rethink of [original j](http://github.com/rupa/j/). See CHANG
         alias jt='j -t recent'
         alias jr='j -t rank'
 
-## MATCHING ALGORITHM
+### MATCHING ALGORITHM
 
 Look for case sensitive match first, then fall back to case insensitive.
 
@@ -43,12 +43,12 @@ Frecency: alter rank by time of last access.
     * If access within last week, divide rank by 2.
     * If access is more than a week, divide rank by 10.
 
-## AGING
+### AGING
 
 Rank is recalculated as 0.9*rank when sum of ranks > 1000.
 When the rank of a directory falls below 1, it will fall off the list.
 
-## FAQ
+### FAQ
 
 Q) How come `j` doesn’t work like`cd`?
 
@@ -60,7 +60,7 @@ A) Short answer: instead of running the script as `j.sh` you type `source j.sh` 
 
 Long answer: sourcing is like importing. When you run a script in a shell, it creates a subshell, runs your script, and returns to your current shell. If you cd in that subshell, it won’t matter to your current shell, because when your script is done running, it exits, and comes back to where you (still) are in your current shell. What we want in this case is to have the function and commands in our script defined in our current shell. Sourcing – rather than executing – the file does exactly that.
 
-## CHANGES FROM [ORIGINAL j](http://github.com/rupa/j/)
+### CHANGES FROM [ORIGINAL j](http://github.com/rupa/j/)
 
 * Uses python to do the heavy lifting.
 
@@ -70,7 +70,7 @@ Long answer: sourcing is like importing. When you run a script in a shell, it cr
 
 * If all matches have a common prefix, and the prefix is one of the matches, and all args are matched in the prefix, go there unconditionally. This attempts to follow the principle of least surprise and replaces the 'short' ordering.
 
-## CREDITS
+### CREDITS
 
 * Joel Schaerer aka [joelthelion](http://github.com/joelthelion/) for [autojump](http://github.com/joelthelion/autojump/)
 * Daniel Drucker aka dmd for finding bugs and making me late for lunch
