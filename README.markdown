@@ -9,9 +9,8 @@ This is a complete rethink of [j](http://github.com/rupa/j/). See CHANGES for di
 # INSTALLATION
 
 * put something like this in your .bashrc:
-
-    export JPY=/path/to/j.py # tells j.sh where the python script is
-    . /path/to/j.sh          # provides the j() function
+    * `export JPY=/path/to/j.py # tells j.sh where the python script is`
+    * `. /path/to/j.sh          # provides the j() function`
 
 * make sure `j.py` is executable
 * `cd` around for a while to build up the db
@@ -37,14 +36,14 @@ Look for case sensitive match first, then fall back to case insensitive.
 If all matches have a common prefix, and the prefix is one of the matches, and all args are matched in the prefix, go there unconditionally. This attempts to follow the principle of least surprise.
 
 Frecency: alter rank by time of last access.
-* If access within last hour, multiply rank by 10.
-* If access within last day, multiply rank by 2.
-* If access within last week, divide rank by 2.
-* If access is more than a week, divide rank by 10.
+    * If access within last hour, multiply rank by 10.
+    * If access within last day, multiply rank by 2.
+    * If access within last week, divide rank by 2.
+    * If access is more than a week, divide rank by 10.
 
 # AGING
 
-Rank is recalculated as .9*rank when sum of ranks > MAX_NUM.
+Rank is recalculated as `.9*rank` when sum of ranks > 1000.
 When the rank of a directory falls below 1, it will fall off the list.
 
 # FAQ
@@ -55,7 +54,7 @@ A) `j` is not intended as a substitute for the cd command. You should still `cd`
 
 Q) How do i 'source' something? Why?
 
-A) Short answer: instead of running the script as `j.sh` you type `source j.sh or `. j.sh` in a shell, or to make it available all the time, put a command in your `.bashrc` that sources it, or just paste the contents of `j.sh` directly into your `.bashrc`.
+A) Short answer: instead of running the script as `j.sh` you type `source j.sh` or `. j.sh` in a shell, or to make it available all the time, put a command in your `.bashrc` that sources it, or just paste the contents of `j.sh` directly into your `.bashrc`.
 
 Long answer: sourcing is like importing. When you run a script in a shell, it creates a subshell, runs your script, and returns to your current shell. If you cd in that subshell, it won’t matter to your current shell, because when your script is done running, it exits, and comes back to where you (still) are in your current shell. What we want in this case is to have the function and commands in our script defined in our current shell. Sourcing – rather than executing – the file does exactly that.
 
