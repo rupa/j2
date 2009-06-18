@@ -153,14 +153,11 @@ def main(file, list, type, args):
             sys.stderr.write('common: %s\n' % j.common)
     # if all our args match a common prefix, let's go there
     elif j.common:
-        sys.stderr.write(j.pretty(type) + '\n')
-        sys.stderr.write('common: %s\n' % j.common)
         sys.stdout.write(j.common)
     else:
         go = j.go(type)
         if not go:
             return
-        sys.stderr.write(j.pretty(type) + '\n')
         sys.stdout.write(go)
 
 if __name__ == '__main__':

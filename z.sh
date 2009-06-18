@@ -1,7 +1,7 @@
 #!/bin/bash
 
-z() {
- local datafile=$HOME/.z
+j() {
+ local datafile=$HOME/.j
  if [ "$1" = "--add" ]; then
   shift
   # $HOME isn't worth matching
@@ -36,13 +36,13 @@ z() {
   ' $datafile 2>/dev/null
  else
   # list/go
-  local pyfile="$HOME/Documents/dev/jj/z.py"
+  local pyfile="$HOME/Documents/dev/jj/j.py"
   cd="$($pyfile -f $datafile $*)"
   [ -z "$cd" -o "$cd" = "$PWD" ] && return
   cd $cd
  fi
 }
 # tab completion
-complete -C 'z --complete "$COMP_LINE"' z
+complete -C 'j --complete "$COMP_LINE"' j
 # populate directory list. avoid clobbering other PROMPT_COMMANDs.
-PROMPT_COMMAND='z --add "$(pwd -P)";'"$PROMPT_COMMAND"
+PROMPT_COMMAND='j --add "$(pwd -P)";'"$PROMPT_COMMAND"
