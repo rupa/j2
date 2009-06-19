@@ -6,6 +6,10 @@ Spend a lot of time cd-ing around a complex directory tree?
 
 This is a complete rethink of [original j](http://github.com/rupa/j/). See CHANGES for differences.
 
+##### NOTE
+
+I've immediately come across a computer with an old version of python that I want this on, so hey, look, a [pure shell version](http://gist.github.com/132429).
+
 ### INSTALLATION
 
 * put something like this in your .bashrc:
