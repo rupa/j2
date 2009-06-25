@@ -31,9 +31,12 @@ class J(object):
                          'recent' : self.recent,
                          'frecent': self.frecent }
         # get list
-        with open(self.datafile, 'r') as f:
-            self.d = [l.strip().split('|') for l in f.readlines()]
-        self.d = [d for d in self.d if os.path.exists(d[0])]
+        try:
+            with open(self.datafile, 'r') as f:
+                self.d = [l.strip().split('|') for l in f.readlines()]
+            self.d = [d for d in self.d if os.path.exists(d[0])]
+        except:
+            self.d = []
 
         # rewrite to disk
         with open(self.datafile, 'w') as f:
