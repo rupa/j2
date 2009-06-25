@@ -73,13 +73,13 @@ class J(object):
         r = []
         for i in self.m:
             if i[1] <= 3600:
-                r.append((i[0]*10, i[2]))
+                r.append((i[0]*4, i[2]))
             elif i[1] <= 86400:
                 r.append((i[0]*2, i[2]))
             elif i[1] <= 604800:
                 r.append((i[0]/2, i[2]))
             else:
-                r.append((i[0]/10, i[2]))
+                r.append((i[0]/4, i[2]))
         return sorted(r)
 
     def matches(self, args, nocase=False):
