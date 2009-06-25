@@ -42,7 +42,7 @@ j() {
         cd "$cd"
     fi
 }
-# tab completion
-complete -C 'j --complete "$COMP_LINE"' j
+# tab completion (only works in bash for now)
+[ "$SHELL" = "/bin/bash" ] && complete -C 'j --complete "$COMP_LINE"' j
 # populate directory list. avoid clobbering other PROMPT_COMMANDs.
 PROMPT_COMMAND='j --add "$(pwd -P)";'"$PROMPT_COMMAND"

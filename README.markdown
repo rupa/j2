@@ -8,7 +8,8 @@ This is a complete rethink of [original j](http://github.com/rupa/j/). See CHANG
 
 ##### NOTE:
 
-I've immediately come across a computer I want this one with an old version of python I can't upgrade, so hey, look, a [pure shell version](http://gist.github.com/132429).
+I've been using this for ease of experimentation, but prefer a [pure shell version](http://github.com/rupa/z).  for portability and ease of use.
+
 
 ### INSTALLATION
 
