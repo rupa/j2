@@ -2,7 +2,7 @@
 
 Spend a lot of time cd-ing around a complex directory tree?
 
-`j` keeps track of where you’ve been and how much time you spend there, and provides a convenient way to jump to the directories you actually use.
+`j` keeps track of where you’ve been and how much time you spend there, and provides a convenient way to jump to the directories you actually use. We use the term "frecency" to refer to how frequent and recent visits to a directory are.
 
 This is a complete rethink of [original j](http://github.com/rupa/j/). See CHANGES for differences.
 
