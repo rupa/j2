@@ -1,3 +1,8 @@
+### CAVEAT
+
+Unless you have reasons not to, you should probably use https://github.com/rupa/z/ - which is actually maintained,
+used, and lovingly cared for.
+
 ### OVERVIEW
 
 Spend a lot of time cd-ing around a complex directory tree?
